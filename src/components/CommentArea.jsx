@@ -19,7 +19,7 @@ class CommentArea extends Component {
             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2E0Y2IxNGNhMDcwNDAwMTU4YmY5NGMiLCJpYXQiOjE3Mzg4NTMxNDAsImV4cCI6MTc0MDA2Mjc0MH0.aGqXT_4w3KnObMpVtPz2zj7kGO6j5LtnCtjWyUoiCi0",
         },
       });
-      if (!response.ok) throw new Error("Errore nel recupero dei commenti");
+      if (!response.ok) throw new Error("Error");
       const data = await response.json();
       this.setState({ comments: data, isLoading: false });
     } catch (error) {

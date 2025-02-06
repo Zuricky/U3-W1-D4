@@ -30,11 +30,11 @@ class AddComment extends Component {
     return (
       <Form onSubmit={this.handleSubmit} className="mt-3">
         <Form.Group>
-          <Form.Label>Commento</Form.Label>
+          <Form.Label>Comment</Form.Label>
           <Form.Control type="text" value={this.state.comment} onChange={(e) => this.setState({ comment: e.target.value })} required />
         </Form.Group>
         <Form.Group className="mt-2">
-          <Form.Label>Valutazione</Form.Label>
+          <Form.Label>Rating</Form.Label>
           <Form.Select value={this.state.rate} onChange={(e) => this.setState({ rate: e.target.value })}>
             {[1, 2, 3, 4, 5].map((num) => (
               <option key={num}>{num}</option>

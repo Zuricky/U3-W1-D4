@@ -15,7 +15,7 @@ class BookList extends Component {
             <Form.Group>
               <Form.Control
                 type="search"
-                placeholder="Cerca un libro"
+                placeholder="Search a book"
                 value={this.state.searchQuery.toLowerCase()}
                 onChange={(e) => this.setState({ searchQuery: e.target.value })}
               />
